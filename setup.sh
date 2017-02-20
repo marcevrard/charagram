@@ -3,7 +3,7 @@ mkdir data
 cd data
 
 #get wordsim353
-wget http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/wordsim353.zip
+wget https://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/wordsim353.zip
 unzip wordsim353.zip -d wordsim
 mv wordsim/combined.tab wordsim353.txt
 rm -Rf wordsim
@@ -18,7 +18,7 @@ rm -Rf wordsim353_sim_rel
 rm ws353simrel.tar.gz
 
 #get simlex999
-wget http://www.cl.cam.ac.uk/~fh295/SimLex-999.zip
+wget https://www.cl.cam.ac.uk/~fh295/SimLex-999.zip
 unzip SimLex-999.zip
 awk -v OFS='\t' '{print $1,$2,$4}' SimLex-999/SimLex-999.txt > SimLex-999.txt
 rm -Rf SimLex-999
